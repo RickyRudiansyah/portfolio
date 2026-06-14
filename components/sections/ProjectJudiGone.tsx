@@ -35,7 +35,7 @@ export default function ProjectJudiGone() {
             {/* Left */}
             <div className="order-1">
               <p className="text-xs text-[#888888] uppercase tracking-[0.08em] mb-8">
-                ML Engineer · Solo Pipeline · Team Thesis
+                GROUP PROJECT · ML Engineer · Near-Solo Pipeline · Team Thesis
               </p>
 
               {/* WHY */}

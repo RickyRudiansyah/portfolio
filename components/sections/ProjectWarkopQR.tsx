@@ -39,7 +39,7 @@ export default function ProjectWarkopQR() {
             <div className="order-1">
               {/* Role badge */}
               <p className="text-xs text-[#888888] uppercase tracking-[0.08em] mb-8">
-                Lead Developer · Duo Project
+                GROUP PROJECT · Lead Developer · Duo Project
               </p>
 
               {/* WHY */}

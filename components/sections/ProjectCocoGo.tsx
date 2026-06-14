@@ -33,7 +33,7 @@ export default function ProjectCocoGo() {
             {/* Left */}
             <div className="order-1">
               <p className="text-xs text-[#888888] uppercase tracking-[0.08em] mb-8">
-                Founder & Team Lead · Team of 5
+                GROUP PROJECT · Founder & Team Lead · Team of 5
               </p>
 
               {/* WHY */}

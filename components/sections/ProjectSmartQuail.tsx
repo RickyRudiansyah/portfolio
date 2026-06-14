@@ -35,7 +35,7 @@ export default function ProjectSmartQuail() {
             {/* Left */}
             <div className="order-1">
               <p className="text-xs text-[#888888] uppercase tracking-[0.08em] mb-8">
-                Mobile Developer (Flutter) · Duo Project
+                GROUP PROJECT · Mobile Developer (Flutter) · Duo Project
               </p>
 
               {/* WHY */}
