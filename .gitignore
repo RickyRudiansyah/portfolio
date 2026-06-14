@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+
+# build
+*.tsbuildinfo
+
+# misc
+.DS_Store
+*.pem
+
+# env
+.env
+.env*.local
+
+# vercel
+.vercel

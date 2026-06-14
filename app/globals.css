@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0A0A;
+  color: #F5F5F5;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #F5F5F5;
+  color: #0A0A0A;
+}
+
+/* ---------- Scroll Reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children: 100ms per element */
+.reveal > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible > *:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0ms;
+}
+.reveal.visible > *:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 100ms;
+}
+.reveal.visible > *:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 200ms;
+}
+.reveal.visible > *:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 300ms;
+}
+.reveal.visible > *:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 400ms;
+}
+.reveal.visible > *:nth-child(6) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+.reveal.visible > *:nth-child(7) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 600ms;
+}
+.reveal.visible > *:nth-child(8) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 700ms;
+}
+.reveal.visible > *:nth-child(9) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 800ms;
+}
+.reveal.visible > *:nth-child(10) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 900ms;
+}
+.reveal.visible > *:nth-child(11) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1000ms;
+}
+.reveal.visible > *:nth-child(12) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1100ms;
+}
+.reveal.visible > *:nth-child(13) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1200ms;
+}
+.reveal.visible > *:nth-child(14) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1300ms;
+}
+.reveal.visible > *:nth-child(15) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1400ms;
+}
+
+/* Project title underline slide-in on hover */
+.title-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.title-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #F5F5F5;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.title-hover:hover::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal > *,
+  .reveal.visible > * {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition-delay: 0ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
