@@ -39,7 +39,7 @@ export default function ProjectWarkopQR() {
             <div className="order-1">
               {/* Role badge */}
               <p className="text-xs text-[#888888] uppercase tracking-[0.08em] mb-8">
-                GROUP PROJECT · Lead Developer · Duo Project
+                DUO PROJECT · Ricky (Lead Developer — full system build) · Rafael (Deploy & QA — testing all features)
               </p>
 
               {/* WHY */}
@@ -47,15 +47,37 @@ export default function ProjectWarkopQR() {
                 WHY
               </p>
               <p className="text-base text-[#F5F5F5] leading-relaxed mb-8">
-                My best friend Vona runs a warung and needed a digital ordering
-                system she could trust — not a third-party platform handling her
-                business data. She asked during my busiest semester. I
-                couldn&apos;t say no, because the need was real.
+                My friend Vona was opening a warung but didn&apos;t want to rely
+                on third-party platforms that would take a cut of every
+                transaction and own her data. She reached out to me during my
+                busiest semester. I almost said no. But the problem was real —
+                so I said yes.
               </p>
 
               {/* HOW */}
               <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
                 HOW
+              </p>
+              <p className="text-base text-[#F5F5F5] leading-relaxed mb-4">
+                I started by writing down everything Vona actually needed on a
+                piece of paper — not what I wanted to build, but what her
+                business needed to run. I built the simplest version first: just
+                a menu and a way to place an order. Then I put it in front of
+                real customers and watched what broke. Every version after that
+                came from something a real user did that I didn&apos;t predict.
+                Over 25 iterations, I rebuilt the entire system from scratch
+                once — because the original stack was too complex to maintain. I
+                chose simplicity over cleverness every time.
+                <br />
+                <br />
+                Rafael joined as my QA partner. His job was to break everything
+                I built before it reached Vona. Managing this across an active
+                internship and a thesis simultaneously nearly broke me — but
+                having someone whose only job was to find my mistakes made the
+                system significantly more reliable.
+              </p>
+              <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
+                STACK
               </p>
               <div className="flex flex-wrap gap-2 mb-8">
                 <Tag>Next.js 16</Tag>
@@ -71,35 +93,40 @@ export default function ProjectWarkopQR() {
                 WHAT
               </p>
               <p className="text-base text-[#F5F5F5] leading-relaxed mb-8">
-                A production-ready QR ordering system built for real business
-                use. Customers scan a QR code at their table, browse the menu,
-                and order without queuing. Staff manage everything through their
-                dedicated dashboards.
+                A QR ordering system built for a real warung. Customers scan a
+                code at their table, browse the menu, and place an order — no
+                waiting in line, no calling a waiter. The cashier sees every
+                order appear in real time. The kitchen knows the queue and how
+                long each order should take. Vona can check her top-selling
+                items, daily revenue, and full order history from her phone.
               </p>
 
               {/* IMPACT */}
-              <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
+              <div className="border border-[#2A2A2A] rounded-lg bg-[#111111] p-6 mb-8">
+              <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#F5F5F5] mb-2">
                 IMPACT
               </p>
-              <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed mb-8">
+              <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed">
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Live in production, used by a real business every day
+                  Built for a real warung and ready for production — currently waiting for Vona&apos;s warung to open before going live
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Replaced manual order-taking entirely
+                  Completely eliminated manual order-taking for the staff
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  25+ iterations from v1 to v2.9 — full rebuild from React +
-                  FastAPI to a unified Next.js stack
+                  Rebuilt 25+ times based on direct feedback from the owner and
+                  real customers
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  22 API endpoints · 12 pages · Security hardened
+                  Security tested: customer data, menu, and transactions are all
+                  protected
                 </li>
               </ul>
+              </div>
 
               {/* LESSON LEARNED */}
               <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
@@ -108,16 +135,19 @@ export default function ProjectWarkopQR() {
               <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed">
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Real users expose bugs no developer can predict
+                  Real users will always find problems you didn&apos;t think of
+                  — that&apos;s not failure, that&apos;s how good software gets
+                  built
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Security is not optional — implemented RLS policies, auth
-                  guards, and state machine guards
+                  Keeping things simple to maintain matters more than using the
+                  most impressive technology
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Iterative development beats chasing perfection from the start
+                  Shipping early and improving continuously beats waiting for
+                  perfection
                 </li>
               </ul>
             </div>

@@ -59,9 +59,14 @@ export default function Intro() {
               </p>
 
               <p className="text-base md:text-lg text-[#888888] leading-relaxed mb-8">
-                I&apos;m a purpose-driven builder who starts from real human
-                problems. Every project I&apos;ve worked on began with one
-                question: is this actually useful to someone?
+                I build from real problems — I can&apos;t work on something
+                without knowing why it matters. I&apos;m the person in every
+                team who always asks: what&apos;s the point of this?
+                <br />
+                <br />
+                My goal in five years is to lead a team that ships something
+                genuinely meaningful. Not impressive on paper — actually useful
+                to real people.
               </p>
 
               <div className="flex flex-wrap items-center gap-4">

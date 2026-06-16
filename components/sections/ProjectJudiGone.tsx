@@ -35,7 +35,7 @@ export default function ProjectJudiGone() {
             {/* Left */}
             <div className="order-1">
               <p className="text-xs text-[#888888] uppercase tracking-[0.08em] mb-8">
-                GROUP PROJECT · ML Engineer · Near-Solo Pipeline · Team Thesis
+                DUO PROJECT · Ricky (data pipeline + all ML experiments) · Sinclair (labeling coordination + thesis writing)
               </p>
 
               {/* WHY */}
@@ -43,15 +43,52 @@ export default function ProjectJudiGone() {
                 WHY
               </p>
               <p className="text-base text-[#F5F5F5] leading-relaxed mb-8">
-                I was reading comments on Indonesian YouTube channels and felt
-                genuinely unsettled. Gambling promotion comments flood every
-                video — millions of people, including minors, see them every
-                day. Nobody was building a real solution. I decided to.
+                I was watching a YouTube video about cars when I noticed the
+                comments were full of online gambling promotions. Millions of
+                Indonesians — including children — see this every single day. I
+                looked for tools that solved this. Nothing good existed. So I
+                decided to build one.
               </p>
 
               {/* HOW */}
               <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
                 HOW
+              </p>
+              <p className="text-base text-[#F5F5F5] leading-relaxed mb-4">
+                My first instinct was to filter by keywords. But spammers are
+                smart — they deliberately misspell words like
+                &apos;j.u.d.i&apos; or &apos;g4mbling&apos; to bypass simple
+                filters. So I had to think like a spammer first.
+                <br />
+                <br />
+                I collected 75,000+ real comments from YouTube and used an AI
+                model to label them consistently — because doing it manually
+                would take months and produce inconsistent results. Once I had
+                reliable labeled data, I built and tested four different
+                detection approaches, ran hundreds of automated experiments to
+                find the best settings for each, and compared them all against
+                the same standard.                 The goal wasn&apos;t to pick the most
+                complex model. It was to find the most accurate one.
+                <br />
+                <br />
+                Sinclair and I had very different roles, but we made a point
+                of staying in sync throughout. Before I ran any experiment, I&apos;d
+                walk Sinclair through what I was planning to try and why — not
+                to get permission, but to get a second opinion. Sometimes he&apos;d
+                catch an assumption I hadn&apos;t questioned. Sometimes I&apos;d
+                explain my reasoning and realize mid-sentence that it didn&apos;t
+                hold up.
+                <br />
+                <br />
+                After every major experiment, I&apos;d update him on what the
+                results actually meant in plain language — not the numbers, but
+                what they told us about the problem. This back-and-forth kept
+                the technical work and the academic writing aligned. I wasn&apos;t
+                just running experiments in isolation. Every decision had to
+                make sense to someone outside the code.
+              </p>
+              <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
+                STACK
               </p>
               <div className="flex flex-wrap gap-2 mb-8">
                 <Tag>Python</Tag>
@@ -66,10 +103,11 @@ export default function ProjectJudiGone() {
                 WHAT
               </p>
               <p className="text-base text-[#F5F5F5] leading-relaxed mb-4">
-                A complete ML pipeline — from raw data to trained model — built
-                almost entirely solo. The goal: a browser extension that
-                automatically detects and hides online gambling promotion
-                comments on YouTube.
+                A browser extension that automatically detects and hides online
+                gambling promotion comments on YouTube. It catches spammers even
+                when they disguise their words with dots, numbers, or unusual
+                characters. Out of every 100 gambling comments, it catches 93.
+                Out of every 100 normal comments, it only misflags less than 1.
               </p>
 
               <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
@@ -78,68 +116,73 @@ export default function ProjectJudiGone() {
               <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed mb-8">
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  YouTube API v3 scraper with checkpointing and audit log
+                  Automatically collected 75,000+ real YouTube comments as
+                  training data
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Multi-threaded annotation pipeline using Qwen3-14b with
-                  homoglyph and leet detection (24 workers)
+                  Built a system to label every comment consistently using AI —
+                  because manual labeling at this scale would be unreliable
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Comprehensive EDA on 75,000+ real comments
+                  Designed and tested four different detection models to find
+                  the most accurate approach
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Production feature extraction pipeline with unicode
-                  normalization
+                  Built a system that recognizes deliberate misspellings and
+                  character tricks spammers use to hide their content
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Full hyperparameter optimization with Optuna — 30–50 trials
-                  per model across 4 architectures
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#888888]">·</span>
-                  Full training and evaluation of Model A, B, C, D with
-                  significance testing
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#888888]">·</span>
-                  Model C redesign with MLP encoder for apple-to-apple
-                  comparison
+                  Ran hundreds of automated experiments to tune each model to
+                  its best performance
                 </li>
               </ul>
 
               {/* STAT BLOCK */}
               <StatBlock
                 items={[
-                  { value: "18,743", label: "lines of code" },
-                  { value: "75,000+", label: "comments scraped" },
-                  { value: "4", label: "model architectures" },
+                  { value: "93%", label: "spam detected" },
+                  { value: "99.6%", label: "normal comments safe" },
+                  { value: "75K+", label: "comments trained on" },
                 ]}
               />
 
               {/* IMPACT */}
-              <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
+              <div className="border border-[#2A2A2A] rounded-lg bg-[#111111] p-6 mb-8">
+              <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#F5F5F5] mb-2">
                 IMPACT
               </p>
-              <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed mb-8">
+              <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed">
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Model trained and evaluated — ready for deployment
+                  Catches 93% of gambling spam comments — including disguised
+                  ones
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Addresses a real national problem: online gambling spam
-                  targeting Indonesian youth
+                  Less than 1% of normal comments get incorrectly flagged
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Proves that a CS student can independently execute a full ML
-                  engineering pipeline
+                  Addresses a real national issue: gambling ads targeting
+                  Indonesian youth through YouTube comments
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#888888]">·</span>
+                  The entire pipeline — from data collection to trained model —
+                  was built almost entirely solo
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#888888]">·</span>
+                  Managed a clear division of labor in a two-person thesis team
+                  — technical ownership on one side, academic writing on the
+                  other
                 </li>
               </ul>
+              </div>
 
               {/* STATUS */}
               <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#555555] mb-2">
@@ -160,23 +203,23 @@ export default function ProjectJudiGone() {
               <ul className="space-y-2 text-base text-[#F5F5F5] leading-relaxed">
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  End-to-end ML is not just modeling — data quality decides
-                  everything
+                  Good data matters more than a complex model — if your training
+                  data is wrong, your results will be wrong too
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Homoglyph and leet substitution (3j4udi, g4mb1ing) requires
-                  purpose-built detection, not keyword matching
+                  Always think like the person trying to break your system, not
+                  just the person using it
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Hyperparameter search is an investment — Optuna saved weeks of
-                  manual tuning
+                  Automating the search for best settings saved weeks of manual
+                  guesswork
                 </li>
                 <li className="flex gap-2">
                   <span className="text-[#888888]">·</span>
-                  Building a large pipeline solo taught me to document
-                  obsessively
+                  Building something large alone forces you to be organized and
+                  disciplined
                 </li>
               </ul>
             </div>
@@ -192,7 +235,7 @@ export default function ProjectJudiGone() {
                   className="w-full h-auto"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-[#111111] border border-[#222222] rounded-lg overflow-hidden">
                   <Image
                     src="/judigone/cm_model_A.png"
